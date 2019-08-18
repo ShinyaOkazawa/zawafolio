@@ -11,6 +11,10 @@ export default {
   components: {
     PageContainer,
     IndexHero
+  },
+  created() {
+    // console.log(this.$route)
+    this.$store.commit('updateCurrentPageName', this.$route.name)
   }
 }
 </script>

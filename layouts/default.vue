@@ -20,7 +20,7 @@ export default {
 <style scoped lang="scss">
 .container {
   display: flex;
-  max-width: 1280px;
+  max-width: 1024px;
   height: 100vh;
   margin: auto;
 }
