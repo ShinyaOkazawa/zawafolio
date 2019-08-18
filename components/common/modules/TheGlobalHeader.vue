@@ -27,10 +27,12 @@ export default {
 .the-global-header {
   flex-shrink: 0;
   position: relative;
-  width: 100px;
+  width: 40px;
   height: 100%;
-  border-left: 1px dotted $base-color;
-  border-right: 5px solid $base-color;
+
+  @include breakpoint(pc) {
+    width: 100px;
+  }
 }
 .inner {
   display: flex;
@@ -40,14 +42,25 @@ export default {
   bottom: 0;
   left: 100%;
   width: 100vh;
-  height: 100px;
-  padding: 0 50px;
+  height: 40px;
+  padding: 0 30px;
+  border-top: 1px dotted $base-color;
+  border-bottom: 5px solid $base-color;
   transform-origin: bottom left;
   transform: rotate(-90deg);
+
+  @include breakpoint(pc) {
+    height: 100px;
+    padding: 0 50px;
+  }
 }
 .logo {
-  font-size: 30px;
+  font-size: 24px;
   font-family: $suranna;
   letter-spacing: 0.1em;
+
+  @include breakpoint(pc) {
+    font-size: 30px;
+  }
 }
 </style>

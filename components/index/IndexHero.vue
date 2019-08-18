@@ -52,30 +52,40 @@
   height: 100%;
   object-fit: contain;
 }
+.contents {
+  position: relative;
+  z-index: 1;
+}
 .title {
-  font-size: vh-sp(40);
   font-family: $suranna;
   letter-spacing: 0.05em;
-  line-height: 1.2em;
+  line-height: 1.2;
 }
 .title-txt {
   display: block;
+  font-size: 26px;
 
   @include breakpoint(pc) {
-    font-size: vw(40);
+    font-size: 40px;
   }
 }
 .title-name {
-  font-size: vw(40);
+  font-size: 30px;
   letter-spacing: 0.1em;
+
+  @include breakpoint(pc) {
+    font-size: 40px;
+  }
 }
 .nav {
   display: flex;
-  margin-top: 20px;
+  flex-wrap: wrap;
 }
 .nav-item {
-  & + & {
-    margin-left: 30px;
+  margin: 15px 15px 0 0;
+
+  @include breakpoint(pc) {
+    margin: 30px 30px 0 0;
   }
 }
 .nav-link {

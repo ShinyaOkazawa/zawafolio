@@ -14,10 +14,12 @@
 .the-global-nav {
   flex-shrink: 0;
   position: relative;
-  width: 100px;
+  width: 40px;
   height: 100%;
-  border-left: 1px dotted $base-color;
-  border-right: 2px solid $base-color;
+
+  @include breakpoint(pc) {
+    width: 100px;
+  }
 }
 .inner {
   display: flex;
@@ -27,9 +29,15 @@
   bottom: 0;
   left: 100%;
   width: 100vh;
-  height: 100px;
+  height: 40px;
+  border-top: 1px dotted $base-color;
+  border-bottom: 2px solid $base-color;
   transform-origin: bottom left;
   transform: rotate(-90deg);
+
+  @include breakpoint(pc) {
+    height: 100px;
+  }
 }
 .nav {
   display: flex;

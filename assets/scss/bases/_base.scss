@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
 html {
   color: $base-color;
   font-size: $base-font-size;
