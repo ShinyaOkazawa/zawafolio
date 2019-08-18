@@ -1,19 +1,16 @@
 <template>
   <PageContainer>
-    <IndexHero />
+    <h2 class="title">About Me</h2>
   </PageContainer>
 </template>
 
 <script>
 import PageContainer from '~/components/common/PageContainer'
-import IndexHero from '~/components/index/IndexHero'
 export default {
   components: {
-    PageContainer,
-    IndexHero
+    PageContainer
   },
   created() {
-    // console.log(this.$route)
     this.$store.commit('updateCurrentPageName', this.$route.name)
   }
 }

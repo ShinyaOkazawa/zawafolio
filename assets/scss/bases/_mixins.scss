@@ -1,0 +1,40 @@
+@mixin breakpoint($point) {
+  @if $point==pc {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $point==sp {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+}
+
+@function vw($px, $w: 1280px) {
+  @return $px * 1px / $w * 100 * 1vw;
+}
+
+@function vw-sp($px, $w: 375px) {
+  @return $px * 1px / $w * 100 * 1vw;
+}
+
+@function vh($px, $h: 750px) {
+  @return $px * 1px / $h * 100 * 1vh;
+}
+
+@function vh-sp($px, $h: 667px) {
+  @return $px * 1px / $h * 100 * 1vh;
+}
+
+@mixin object-fit($fit: fill, $position: null){
+  object-fit: $fit;
+
+  @if $position {
+    object-position: $position;
+  	font-family: 'object-fit: #{$fit}; object-position: #{$position}';
+  } @else {
+  	font-family: 'object-fit: #{$fit}';
+  }
+}

@@ -6,15 +6,7 @@ module.exports = {
   /*
   ** Headers of the page
   */
-  head: {
-    title: pkg.name,
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
-    ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
-  },
+  head: require('./config/head'),
 
   /*
   ** Customize the progress-bar color
@@ -24,8 +16,10 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: [],
-
+  css: ['~/assets/scss/style.scss'],
+  styleResources: {
+    scss: ['~/assets/scss/_vue-globals.scss']
+  },
   /*
   ** Plugins to load before mounting the App
   */
@@ -34,7 +28,7 @@ module.exports = {
   /*
   ** Nuxt.js modules
   */
-  modules: [],
+  modules: ['@nuxtjs/style-resources'],
 
   /*
   ** Build configuration
