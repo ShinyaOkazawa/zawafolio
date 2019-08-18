@@ -94,11 +94,5 @@ module.exports = {
       href:
         '//fonts.googleapis.com/css?family=Mukta|Noto+Serif+JP|Suranna&display=swap&subset=japanese'
     }
-  ],
-  script: [
-    {
-      src: '//cdn.jsdelivr.net/npm/svgxuse@1.2.6/svgxuse.min.js',
-      async: ''
-    }
   ]
 }
