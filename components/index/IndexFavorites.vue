@@ -2,19 +2,19 @@
   <div class="index-favorites">
     <h2 class="title">Favorites</h2>
     <div class="image">
-      <img src="~/assets/images/image-1.jpg" alt="" class="image-item">
+      <img src="~/assets/images/image-1.jpg" alt="" class="image-item" loading="lazy">
     </div>
     <div class="image">
-      <img src="~/assets/images/image-2.jpg" alt="" class="image-item">
+      <img src="~/assets/images/image-2.jpg" alt="" class="image-item" loading="lazy">
     </div>
     <div class="image">
-      <img src="~/assets/images/image-3.jpg" alt="" class="image-item">
+      <img src="~/assets/images/image-3.jpg" alt="" class="image-item" loading="lazy">
     </div>
     <div class="image">
-      <img src="~/assets/images/image-4.jpg" alt="" class="image-item">
+      <img src="~/assets/images/image-4.jpg" alt="" class="image-item" loading="lazy">
     </div>
     <div class="image">
-      <img src="~/assets/images/image-5.jpg" alt="" class="image-item">
+      <img src="~/assets/images/image-5.jpg" alt="" class="image-item" loading="lazy">
     </div>
   </div>
 </template>
