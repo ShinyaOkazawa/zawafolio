@@ -15,7 +15,7 @@ module.exports = {
     {
       hid: 'description',
       name: 'description',
-      content: 'description'
+      content: 'ZAWAfolio is a portfolio website of web developer ZAWA.'
     },
     {
       property: 'og:site_name',
@@ -34,17 +34,17 @@ module.exports = {
     {
       hid: 'og:description',
       property: 'og:description',
-      content: 'description'
+      content: 'ZAWAfolio is a portfolio website of web developer ZAWA.'
     },
     {
       hid: 'og:url',
       property: 'og:url',
-      content: 'description'
+      content: 'https://www.zawafolio.com/'
     },
     {
       hid: 'og:image',
       property: 'og:image',
-      content: ''
+      content: 'https://www.zawafolio.com/ogp.png'
     },
     {
       property: 'og:image:width',
@@ -57,7 +57,7 @@ module.exports = {
     {
       hid: 'og:image:secure_url',
       property: 'og:image:secure_url',
-      content: ''
+      content: 'https://www.zawafolio.com/ogp.png'
     },
     {
       property: 'twitter:card',
@@ -66,7 +66,7 @@ module.exports = {
     {
       hid: 'twitter:description',
       property: 'twitter:description',
-      content: 'description'
+      content: 'ZAWAfolio is a portfolio website of web developer ZAWA.'
     },
     {
       hid: 'twitter:title',
@@ -76,29 +76,24 @@ module.exports = {
     {
       hid: 'twitter:image',
       property: 'twitter:image',
-      content: ''
+      content: 'https://www.zawafolio.com/ogp.png'
     }
   ],
   link: [
     {
-      rel: 'icon',
-      type: 'image/x-icon',
-      href: ''
+      rel: 'preconnect',
+      href: '//fonts.googleapis.com',
+      crossorigin: 'true'
     },
     {
-      rel: 'apple-touch-icon-precomposed',
-      href: ''
+      rel: 'preconnect',
+      href: '//fonts.gstatic.com',
+      crossorigin: 'true'
     },
     {
       rel: 'stylesheet',
       href:
         '//fonts.googleapis.com/css?family=Mukta|Noto+Serif+JP|Suranna&display=swap&subset=japanese'
-    }
-  ],
-  script: [
-    {
-      src: '//cdn.jsdelivr.net/npm/svgxuse@1.2.6/svgxuse.min.js',
-      async: ''
     }
   ]
 }

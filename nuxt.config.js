@@ -1,5 +1,3 @@
-const pkg = require('./package')
-
 module.exports = {
   mode: 'universal',
 
@@ -28,8 +26,58 @@ module.exports = {
   /*
   ** Nuxt.js modules
   */
-  modules: ['@nuxtjs/style-resources'],
+  modules: ['@nuxtjs/style-resources', '@nuxtjs/pwa'],
 
+  workbox: {
+    cacheNames: {
+      prefix: 'zawafolio'
+    },
+    config: {
+      debug: true
+    },
+    dev: process.env.NODE_ENV === 'development',
+    runtimeCaching: [
+      {
+        // google fonts stylesheets
+        handler: 'staleWhileRevalidate',
+        urlPattern: '.*fonts.googleapis.com/.*',
+        strategyOptions: {
+          cacheName: 'google-fonts-stylesheets'
+        }
+      },
+      {
+        // google fonts files
+        handler: 'cacheFirst',
+        urlPattern: '.*fonts.gstatic.com/.*',
+        strategyOptions: {
+          cacheName: 'google-fonts-webfonts',
+          cacheableResponse: {
+            statuses: [0, 200]
+          },
+          cacheExpiration: {
+            maxAgeSeconds: 60 * 60 * 24 * 365,
+            maxEntries: 30
+          }
+        }
+      }
+    ]
+  },
+  icon: {
+    iconSrc: './static/icon.png',
+    sizes: [192, 512]
+  },
+  manifest: {
+    lang: 'ja',
+    name: 'ZAWAfolio',
+    description: 'ZAWAfolio is a portfolio website of web developer ZAWA.',
+    short_name: 'ZAWAfolio',
+    start_url: '/?utm_source=homescreen',
+    theme_color: '#ffffff',
+    background_color: '#ffffff'
+  },
+  meta: {
+    author: false
+  },
   /*
   ** Build configuration
   */
