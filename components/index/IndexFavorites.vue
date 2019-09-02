@@ -8,13 +8,6 @@
         <img src="~/assets/images/image-1.jpg" alt="" loading="lazy" class="image-item">
       </picture>
     </div>
-    <div class="image">
-      <picture>
-        <source media="(min-width: 768px)" srcset="~/assets/images/image-2.jpg">
-        <source media="(max-width: 767px)" srcset="~/assets/images/image-2-sp.jpg">
-        <img src="~/assets/images/image-2.jpg" alt="" loading="lazy" class="image-item">
-      </picture>
-    </div>
   </div>
 </template>
 
