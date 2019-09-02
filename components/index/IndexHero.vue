@@ -1,7 +1,7 @@
 <template>
   <div class="index-hero">
     <div class="portrait">
-      <img src="~/assets/images/portrait.svg" alt="" class="portrait-item">
+      <IndexPortrate class="portrait-item" />
     </div>
     <div class="contents">
       <p class="title">
@@ -25,6 +25,12 @@
 </template>
 
 <script>
+import IndexPortrate from '~/assets/images/portrait.svg'
+export default {
+  components: {
+    IndexPortrate
+  },
+}
 </script>
 
 <style scoped lang="scss">
@@ -50,7 +56,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
 }
 .contents {
   position: relative;
