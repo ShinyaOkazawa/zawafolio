@@ -89,11 +89,6 @@ module.exports = {
       rel: 'preconnect',
       href: '//fonts.gstatic.com',
       crossorigin: 'true'
-    },
-    {
-      rel: 'stylesheet',
-      href:
-        '//fonts.googleapis.com/css?family=Mukta|Noto+Serif+JP|Suranna&display=swap&subset=japanese'
     }
   ]
 }
