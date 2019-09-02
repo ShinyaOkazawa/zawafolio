@@ -26,7 +26,14 @@ module.exports = {
   /*
   ** Nuxt.js modules
   */
-  modules: ['@nuxtjs/style-resources', '@nuxtjs/pwa'],
+  modules: ['@nuxtjs/style-resources', '@nuxtjs/pwa', 'nuxt-webfontloader'],
+
+  webfontloader: {
+    google: {
+      // Loads Open Sans font with weights 300 and 400 + display font as swap
+      families: ['Mukta|Noto+Serif+JP|Suranna&display=swap&subset=japanese']
+    }
+  },
 
   workbox: {
     cacheNames: {
