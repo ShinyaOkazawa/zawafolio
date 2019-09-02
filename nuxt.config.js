@@ -31,7 +31,7 @@ module.exports = {
   webfontloader: {
     google: {
       // Loads Open Sans font with weights 300 and 400 + display font as swap
-      families: ['Mukta|Noto+Serif+JP|Suranna&display=swap&subset=japanese']
+      families: ['Noto+Serif+JP|Suranna&display=swap&subset=japanese']
     }
   },
 
