@@ -2,19 +2,39 @@
   <div class="index-favorites">
     <h2 class="title">Favorites</h2>
     <div class="image">
-      <img src="~/assets/images/image-1.jpg" alt="" class="image-item" loading="lazy">
+      <picture>
+        <source media="(min-width: 768px)" srcset="~/assets/images/image-1.jpg">
+        <source media="(max-width: 767px)" srcset="~/assets/images/image-1-sp.jpg">
+        <img src="~/assets/images/image-1.jpg" alt="" loading="lazy" class="image-item">
+      </picture>
     </div>
     <div class="image">
-      <img src="~/assets/images/image-2.jpg" alt="" class="image-item" loading="lazy">
+      <picture>
+        <source media="(min-width: 768px)" srcset="~/assets/images/image-2.jpg">
+        <source media="(max-width: 767px)" srcset="~/assets/images/image-2-sp.jpg">
+        <img src="~/assets/images/image-2.jpg" alt="" loading="lazy" class="image-item">
+      </picture>
     </div>
     <div class="image">
-      <img src="~/assets/images/image-3.jpg" alt="" class="image-item" loading="lazy">
+      <picture>
+        <source media="(min-width: 768px)" srcset="~/assets/images/image-3.jpg">
+        <source media="(max-width: 767px)" srcset="~/assets/images/image-3-sp.jpg">
+        <img src="~/assets/images/image-3.jpg" alt="" loading="lazy" class="image-item">
+      </picture>
     </div>
     <div class="image">
-      <img src="~/assets/images/image-4.jpg" alt="" class="image-item" loading="lazy">
+      <picture>
+        <source media="(min-width: 768px)" srcset="~/assets/images/image-4.jpg">
+        <source media="(max-width: 767px)" srcset="~/assets/images/image-4-sp.jpg">
+        <img src="~/assets/images/image-4.jpg" alt="" loading="lazy" class="image-item">
+      </picture>
     </div>
     <div class="image">
-      <img src="~/assets/images/image-5.jpg" alt="" class="image-item" loading="lazy">
+      <picture>
+        <source media="(min-width: 768px)" srcset="~/assets/images/image-5.jpg">
+        <source media="(max-width: 767px)" srcset="~/assets/images/image-5-sp.jpg">
+        <img src="~/assets/images/image-5.jpg" alt="" loading="lazy" class="image-item">
+      </picture>
     </div>
   </div>
 </template>
