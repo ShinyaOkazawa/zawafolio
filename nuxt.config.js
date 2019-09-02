@@ -31,7 +31,7 @@ module.exports = {
   webfontloader: {
     google: {
       // Loads Open Sans font with weights 300 and 400 + display font as swap
-      families: ['Noto+Serif+JP|Suranna&display=swap']
+      families: ['Noto+Serif|Suranna&display=swap']
     }
   },
 
