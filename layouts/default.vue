@@ -2,7 +2,7 @@
   <div class="container">
     <TheGlobalNav />
     <nuxt />
-    <TheGlobalHeader/>
+    <TheGlobalHeader />
   </div>
 </template>
 

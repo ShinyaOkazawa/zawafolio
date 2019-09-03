@@ -3,7 +3,9 @@
     <div class="inner">
       <ul class="nav">
         <li class="nav-item">
-          <NuxtLink to="/" class="nav-link">home</NuxtLink>
+          <NuxtLink to="/" class="nav-link">
+            home
+          </NuxtLink>
         </li>
       </ul>
     </div>

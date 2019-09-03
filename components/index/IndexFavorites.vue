@@ -1,6 +1,8 @@
 <template>
   <div class="index-favorites">
-    <h2 class="title">Favorites</h2>
+    <h2 class="title">
+      Favorites
+    </h2>
     <div class="image">
       <picture>
         <source media="(min-width: 768px)" srcset="~/assets/images/image-1.jpg">
