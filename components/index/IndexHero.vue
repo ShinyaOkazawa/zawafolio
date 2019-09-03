@@ -29,7 +29,7 @@ import IndexPortrate from '~/assets/images/portrait.svg'
 export default {
   components: {
     IndexPortrate
-  },
+  }
 }
 </script>
 
