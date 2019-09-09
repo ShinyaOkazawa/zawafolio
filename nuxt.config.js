@@ -36,6 +36,7 @@ module.exports = {
   },
 
   workbox: {
+    importScripts: ['push7-worker.js'],
     cacheNames: {
       prefix: 'zawafolio'
     },
@@ -80,7 +81,9 @@ module.exports = {
     short_name: 'ZAWAfolio',
     start_url: '/?utm_source=homescreen',
     theme_color: '#ffffff',
-    background_color: '#ffffff'
+    background_color: '#ffffff',
+    gcm_sender_id: '781205625909',
+    gcm_user_visible_only: true
   },
   meta: {
     author: false

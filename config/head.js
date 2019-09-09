@@ -90,5 +90,11 @@ module.exports = {
       href: '//fonts.gstatic.com',
       crossorigin: 'true'
     }
+  ],
+  script: [
+    {
+      src: 'https://sdk.push7.jp/v2/p7sdk.js',
+      defer: true
+    }
   ]
 }
