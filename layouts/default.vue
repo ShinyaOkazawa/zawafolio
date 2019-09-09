@@ -22,13 +22,6 @@ export default {
     return {
       containerBackgroundImage: containerBackgroundImage
     }
-  },
-  mounted() {
-    const p7 = window.p7
-    p7.init('9372b78735b24486af755e32ded08860', {
-      mode: 'native',
-      subscribe: 'auto'
-    })
   }
 }
 </script>

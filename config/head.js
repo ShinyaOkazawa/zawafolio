@@ -78,23 +78,5 @@ module.exports = {
       property: 'twitter:image',
       content: 'https://www.zawafolio.com/ogp.png'
     }
-  ],
-  link: [
-    {
-      rel: 'preconnect',
-      href: '//fonts.googleapis.com',
-      crossorigin: 'true'
-    },
-    {
-      rel: 'preconnect',
-      href: '//fonts.gstatic.com',
-      crossorigin: 'true'
-    }
-  ],
-  script: [
-    {
-      src: 'https://sdk.push7.jp/v2/p7sdk.js',
-      defer: true
-    }
   ]
 }
