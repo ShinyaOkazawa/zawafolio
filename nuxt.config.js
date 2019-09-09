@@ -36,7 +36,6 @@ module.exports = {
   },
 
   workbox: {
-    importScripts: ['push7-worker.js'],
     cacheNames: {
       prefix: 'zawafolio'
     },
